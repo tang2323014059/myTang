@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./style.css">
+   
+    <script src="./flexible.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+          <header class="header iconfont">
+              <span><img src="./img/作业效果图_r2_c2.png" alt=""></span>
+              <span>消息</span>
+              <span>&#xe626;</span>
+          </header>
+          <main class="main">
+              <div class="search iconfont">
+                  <p>
+                      <span>&#xe614;</span><input type="text" placeholder="搜索">
+                  </p>
+              </div>
+              <div class="user">
+                 <dl class="user-dl">
+                     <dt><img src="./img/header.png" alt=""></dt>
+                      
+                     <dd>
+                         <h1>网站工程</h1> 
+                         <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                     </dd>
+                     <h2 class="erro">删除</h2>
+                 </dl>
+                 <dl class="user-dl">
+                    <dt><img src="./img/header.png" alt=""></dt>
+                     
+                    <dd>
+                        <h1>网站工程</h1> 
+                        <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                    </dd>
+                    <h2 class="erro">删除</h2>
+                </dl>
+                <dl class="user-dl">
+                    <dt><img src="./img/header.png" alt=""></dt>
+                     
+                    <dd>
+                        <h1>网站工程</h1> 
+                        <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                    </dd>
+                    <h2 class="erro">删除</h2>
+                </dl>
+                <dl class="user-dl">
+                    <dt><img src="./img/header.png" alt=""></dt>
+                     
+                    <dd>
+                        <h1>网站工程</h1> 
+                        <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                    </dd>
+                    <h2 class="erro">删除</h2>
+                </dl>
+                <dl class="user-dl">
+                    <dt><img src="./img/header.png" alt=""></dt>
+                     
+                    <dd>
+                        <h1>网站工程</h1> 
+                        <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                    </dd>
+                    <h2 class="erro">删除</h2>
+                </dl>
+                <dl class="user-dl">
+                    <dt><img src="./img/header.png" alt=""></dt>
+                     
+                    <dd>
+                        <h1>网站工程</h1> 
+                        <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                    </dd>
+                    <h2 class="erro">删除</h2>
+                </dl>
+                <dl class="user-dl">
+                    <dt><img src="./img/header.png" alt=""></dt>
+                     
+                    <dd>
+                        <h1>网站工程</h1> 
+                        <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                    </dd>
+                    <h2 class="erro">删除</h2>
+                </dl>
+                <dl class="user-dl">
+                    <dt><img src="./img/header.png" alt=""></dt>
+                     
+                    <dd>
+                        <h1>网站工程</h1> 
+                        <p>辅导员 丽江被:@校长 尤正套 你是我二儿子</p>
+                    </dd>
+                    <h2 class="erro">删除</h2>
+                </dl>
+
+              </div>
+          </main>
+          <footer class="footer iconfont">
+              <ul class="footer-ul">
+                 <li>&#xe628;</li>
+                 <li>消息</li>
+              </ul>
+              <ul class="footer-ul">
+                <li>&#xe617;</li>
+                <li>联系人</li>
+             </ul>
+             <ul class="footer-ul">
+                <li>&#xe60e;</li>
+                <li>动态</li>
+             </ul>
+          </footer>
+    </div>
+</body>
+<script src="./tap.js"></script>
+<script>
+    var userdl = document.querySelector(".user-dl");
+    var erro   = document.querySelector(".erro");
+   
+    myTouch.tap(erro,function(){
+        userdl.remove();
+    })
+    myTouch.swiper(userdl,"left",function(){
+        erro.classList.add("trans1");
+        erro.classList.remove("trans2");
+    })
+    myTouch.swiper(userdl,"right",function(){
+        erro.classList.add("trans2");
+        erro.classList.remove("trans1");
+    })
+</script>
+</html>
